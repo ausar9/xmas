@@ -325,7 +325,7 @@
                             const w = h * aspect;
                             const g = new THREE.Group();
                             const frame = new THREE.Mesh(new THREE.BoxGeometry(w + 0.2, h + 0.2, 0.05), new THREE.MeshStandardMaterial({color:0xffd966, metalness:1, roughness:0.1}));
-[O                            const p = new THREE.Mesh(new THREE.PlaneGeometry(w, h), new THREE.MeshBasicMaterial({map:texture, side: THREE.DoubleSide}));
+                            const p = new THREE.Mesh(new THREE.PlaneGeometry(w, h), new THREE.MeshBasicMaterial({map:texture, side: THREE.DoubleSide}));
                             p.position.z = 0.04;
                             g.add(frame); g.add(p);
                             photoMeshGroup.add(g);
